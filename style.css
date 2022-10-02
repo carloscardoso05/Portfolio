@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25rem;
+    color: #252525;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        55deg,
+        hsl(29deg 60% 93%) 13%,
+        hsl(28deg 48% 90%) 45%,
+        hsl(27deg 42% 87%) 50%,
+        hsl(27deg 38% 85%) 50%,
+        hsl(26deg 35% 82%) 50%,
+        hsl(25deg 33% 79%) 50%,
+        hsl(25deg 31% 76%) 55%,
+        hsl(24deg 30% 74%) 87%
+      );
+      background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    z-index: 1;
+
+    /* From https://css.glass */
+    background: rgba(45, 19, 44, 0.14);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(45, 19, 44, 0.32);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+nav ul a{
+    box-sizing: border-box;
+    padding: 6px 12px;
+}
+
+header {
+    width: 100vw;
+    height: 80vh;
+    box-sizing: border-box;
+}   
+
+.ola em {
+    font-size: 2rem;
+}
+
+.inicio {
+    position: relative;
+    left: 53px;
+    top: 147px;
+}
+
+.links {
+    position: relative;
+    top: 25px;
+}
+
+.links button {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    background: inherit;
+    border: 1px solid #2D132C;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: #2D132C 2px 2px 0px;
+    transition: 0.2s;
+}
+
+.links button:hover {
+    box-shadow: 1px 1px 0px;
+    transform: translate(1px, 1px);
+}
+
+.links .icone {
+    height: 1.2rem;
+}
+
+.tecnologias{
+    /* border: 1px solid red; */
+    position: relative;
+    margin-left: auto;
+    margin-right: 4rem;
+    max-width: min-content;
+    
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tecnologia{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+.tecnologias img {
+    width: 55px;
+    filter: drop-shadow(4px 4px 5px #00000073);
+}
+
+.tecnologias .tecnologia:hover{
+    filter: drop-shadow(4px 4px 5px #0000002d);
+    transform: translate(-3px, -3px);
+}
+
+.sobre-mim {
+    border-top: 1px solid #7D6E83;
+    width: 72vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-mim h2{
+    text-align: center;
+    line-height: 2.8rem;
+    font-size: 1.75rem;
+}
+
+.sobre-mim .conteudo p{
+    text-align: justify;
+    text-indent: 1rem;
+    line-height: 1.7rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
