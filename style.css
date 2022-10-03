@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
 html{
     overflow-x: hidden;
@@ -149,4 +150,24 @@ header {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer{
+    color: #949393;
+    background-color: #252525;
+    margin-top: 5rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer ul{
+    columns: 2;
+}
+
+#copiar-email {
+    cursor: pointer;
+    text-decoration: none;
+    font-style: italic;
+    text-decoration: underline;
 }
